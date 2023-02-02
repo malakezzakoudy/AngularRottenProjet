@@ -1,0 +1,26 @@
+<div class="login-container">
+    <img class="film" src="assets/images/film.png" alt="" />
+    <div class="logo">Rotten Maticha</div>
+    <div class="desc">
+        Rotten Maticha est la source de recommandation la plus fiable au monde pour
+        la qualité du divertissement. En tant que principal agrégateur en ligne de films et d'émissions de télévision
+        , nous fournissons aux fans un guide complet de ce qui est
+        Fresh – et ce qui est Rotten – au cinéma et à la maison. Si vous êtes un
+        fan de divertissement à la recherche d’une recommandation, ou vous voulez partager un avis,
+        vous êtes au bon endroit!!!
+    </div>
+    <div class="login-form">
+      <div class="form-group">
+        <label for="uname">Nom d'utilisateur</label>
+        <input type="text" name="uname" class="form-control" [(ngModel)]="username"  />
+    </div>
+      <div class="form-group">
+        <label for="pword">Mot de passe</label>
+        <input  type="password" name="pword" class="form-control" [(ngModel)]="password" />
+      </div>
+      <div class="btn-container">
+        <div class="error">{{ errorMsg }}</div>
+        <button class="btn btn-dark" (click)="login()">Login</button>
+      </div>
+    </div>
+  </div>
